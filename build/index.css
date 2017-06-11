@@ -1,0 +1,47 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+}
+
+body.brush {
+  flex-direction: column;
+}
+
+.brush .container {
+  width: 765px;
+  height: 765px;
+}
+
+.bush svg {
+  width: 100%;
+}
+
+.brush .bar:hover {
+  fill: #fff;
+}
+
+.brush .temp-display {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  background-color: white;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 27px;
+}
