@@ -1,33 +1,23 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlPlugin = require('html-webpack-plugin');
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const AssetsPlugin = require('html-webpack-include-assets-plugin');
 
-const babelPresets = [
-  'flow',
-  [
-    'env',
-    {
-      targets: {
-        browsers: ['last 1 version']
-      }
-    }
-  ]
-];
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: {
-    minimap: './src/minimap.js',
-    brush: './src/brush.js'
+    brush: './src/scripts/brush/index.js',
+    minimap: './src/scripts/minimap/index.js'
   },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build')
   },
-  devtool: 'source-map',
-  devServer: {port: 3000},
-  externals: {
-    'mapbox-gl': 'mapboxgl'
+  devServer: {
+    contentBase: './build',
+    port: 8000
   },
+  devtool: isProduction ? false : 'source-map',
   module: {
     loaders: [
       {
@@ -35,24 +25,53 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: babelPresets,
+          presets: ['env'],
           plugins: ['transform-object-rest-spread']
         }
+      },
+      {
+        test: /\.styl$/i,
+        exclude: /node_modules/,
+        // always extract the css into a file
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                url: false
+              }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: isProduction ? [require('autoprefixer')] : null,
+                sourceMap: !isProduction
+              }
+            },
+            'stylus-loader'
+          ]
+        })
       }
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      chunks: ['minimap'],
-      filename: 'minimap.html'
+    new HtmlPlugin({
+      filename: 'index.html',
+      template: 'src/templates/index.html',
+      chunks: []
     }),
-    new HtmlWebpackPlugin({
-      chunks: ['brush'],
-      filename: 'brush.html'
+    new HtmlPlugin({
+      filename: 'brush.html',
+      template: 'src/templates/template.html',
+      chunks: ['brush']
     }),
-    new AssetsPlugin({
-      append: false,
-      assets: ['mapbox-gl.js', 'mapbox-gl.css', 'index.css']
+    new HtmlPlugin({
+      filename: 'minimap.html',
+      template: 'src/templates/template.html',
+      chunks: ['minimap']
+    }),
+    new ExtractTextPlugin({
+      filename: 'styles/main.css'
     })
   ]
 };
