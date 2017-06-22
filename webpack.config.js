@@ -52,7 +52,7 @@ module.exports = {
     }),
     new AssetsPlugin({
       append: false,
-      assets: ['build/mapbox-gl.js', 'build/mapbox-gl.css', 'build/index.css']
+      assets: ['mapbox-gl.js', 'mapbox-gl.css', 'index.css']
     })
   ]
 };
