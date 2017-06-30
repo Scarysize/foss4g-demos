@@ -1,0 +1,1272 @@
+[
+  {
+    "grayValue": 0,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 1,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 2,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 3,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 4,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 5,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 6,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 7,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 8,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 9,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 10,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 11,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 12,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 13,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 14,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 15,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 16,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 17,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 18,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 19,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 20,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 21,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 22,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 23,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 24,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 25,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 26,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 27,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 28,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 29,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 30,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 31,
+    "dataValue": 0,
+    "category": null
+  },
+  {
+    "grayValue": 32,
+    "dataValue": 0.03,
+    "category": "rain"
+  },
+  {
+    "grayValue": 33,
+    "dataValue": 0.04,
+    "category": "rain"
+  },
+  {
+    "grayValue": 34,
+    "dataValue": 0.1,
+    "category": "rain"
+  },
+  {
+    "grayValue": 35,
+    "dataValue": 0.125,
+    "category": "rain"
+  },
+  {
+    "grayValue": 36,
+    "dataValue": 0.2,
+    "category": "rain"
+  },
+  {
+    "grayValue": 37,
+    "dataValue": 0.3,
+    "category": "rain"
+  },
+  {
+    "grayValue": 38,
+    "dataValue": 0.4,
+    "category": "rain"
+  },
+  {
+    "grayValue": 39,
+    "dataValue": 0.5,
+    "category": "rain"
+  },
+  {
+    "grayValue": 40,
+    "dataValue": 0.6,
+    "category": "rain"
+  },
+  {
+    "grayValue": 41,
+    "dataValue": 0.7,
+    "category": "rain"
+  },
+  {
+    "grayValue": 42,
+    "dataValue": 0.8,
+    "category": "rain"
+  },
+  {
+    "grayValue": 43,
+    "dataValue": 1,
+    "category": "rain"
+  },
+  {
+    "grayValue": 44,
+    "dataValue": 1.25,
+    "category": "rain"
+  },
+  {
+    "grayValue": 45,
+    "dataValue": 2,
+    "category": "rain"
+  },
+  {
+    "grayValue": 46,
+    "dataValue": 3,
+    "category": "rain"
+  },
+  {
+    "grayValue": 47,
+    "dataValue": 4,
+    "category": "rain"
+  },
+  {
+    "grayValue": 48,
+    "dataValue": 5,
+    "category": "rain"
+  },
+  {
+    "grayValue": 49,
+    "dataValue": 8,
+    "category": "rain"
+  },
+  {
+    "grayValue": 50,
+    "dataValue": 10,
+    "category": "rain"
+  },
+  {
+    "grayValue": 51,
+    "dataValue": 15,
+    "category": "rain"
+  },
+  {
+    "grayValue": 52,
+    "dataValue": 20,
+    "category": "rain"
+  },
+  {
+    "grayValue": 53,
+    "dataValue": 25,
+    "category": "rain"
+  },
+  {
+    "grayValue": 54,
+    "dataValue": 30,
+    "category": "rain"
+  },
+  {
+    "grayValue": 55,
+    "dataValue": 35,
+    "category": "rain"
+  },
+  {
+    "grayValue": 56,
+    "dataValue": 40,
+    "category": "rain"
+  },
+  {
+    "grayValue": 57,
+    "dataValue": 50,
+    "category": "rain"
+  },
+  {
+    "grayValue": 58,
+    "dataValue": 65,
+    "category": "rain"
+  },
+  {
+    "grayValue": 59,
+    "dataValue": 75,
+    "category": "rain"
+  },
+  {
+    "grayValue": 60,
+    "dataValue": 100,
+    "category": "rain"
+  },
+  {
+    "grayValue": 61,
+    "dataValue": 150,
+    "category": "rain"
+  },
+  {
+    "grayValue": 62,
+    "dataValue": 200,
+    "category": "rain"
+  },
+  {
+    "grayValue": 63,
+    "dataValue": 0,
+    "category": "rain"
+  },
+  {
+    "grayValue": 64,
+    "dataValue": 0.03,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 65,
+    "dataValue": 0.04,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 66,
+    "dataValue": 0.1,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 67,
+    "dataValue": 0.125,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 68,
+    "dataValue": 0.2,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 69,
+    "dataValue": 0.3,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 70,
+    "dataValue": 0.4,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 71,
+    "dataValue": 0.5,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 72,
+    "dataValue": 0.6,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 73,
+    "dataValue": 0.7,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 74,
+    "dataValue": 0.8,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 75,
+    "dataValue": 1,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 76,
+    "dataValue": 1.25,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 77,
+    "dataValue": 2,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 78,
+    "dataValue": 3,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 79,
+    "dataValue": 4,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 80,
+    "dataValue": 5,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 81,
+    "dataValue": 8,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 82,
+    "dataValue": 10,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 83,
+    "dataValue": 15,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 84,
+    "dataValue": 20,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 85,
+    "dataValue": 25,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 86,
+    "dataValue": 30,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 87,
+    "dataValue": 35,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 88,
+    "dataValue": 40,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 89,
+    "dataValue": 50,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 90,
+    "dataValue": 65,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 91,
+    "dataValue": 75,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 92,
+    "dataValue": 100,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 93,
+    "dataValue": 150,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 94,
+    "dataValue": 200,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 95,
+    "dataValue": 0,
+    "category": "Rain and Snow"
+  },
+  {
+    "grayValue": 96,
+    "dataValue": 0.03,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 97,
+    "dataValue": 0.04,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 98,
+    "dataValue": 0.1,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 99,
+    "dataValue": 0.125,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 100,
+    "dataValue": 0.2,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 101,
+    "dataValue": 0.3,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 102,
+    "dataValue": 0.4,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 103,
+    "dataValue": 0.5,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 104,
+    "dataValue": 0.6,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 105,
+    "dataValue": 0.7,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 106,
+    "dataValue": 0.8,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 107,
+    "dataValue": 1,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 108,
+    "dataValue": 1.25,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 109,
+    "dataValue": 2,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 110,
+    "dataValue": 3,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 111,
+    "dataValue": 4,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 112,
+    "dataValue": 5,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 113,
+    "dataValue": 8,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 114,
+    "dataValue": 10,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 115,
+    "dataValue": 15,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 116,
+    "dataValue": 20,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 117,
+    "dataValue": 25,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 118,
+    "dataValue": 30,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 119,
+    "dataValue": 35,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 120,
+    "dataValue": 40,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 121,
+    "dataValue": 50,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 122,
+    "dataValue": 65,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 123,
+    "dataValue": 75,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 124,
+    "dataValue": 100,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 125,
+    "dataValue": 150,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 126,
+    "dataValue": 200,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 127,
+    "dataValue": 0,
+    "category": "Snow"
+  },
+  {
+    "grayValue": 129,
+    "dataValue": 0.04,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 130,
+    "dataValue": 0.1,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 131,
+    "dataValue": 0.125,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 132,
+    "dataValue": 0.2,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 133,
+    "dataValue": 0.3,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 134,
+    "dataValue": 0.4,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 135,
+    "dataValue": 0.5,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 136,
+    "dataValue": 0.6,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 137,
+    "dataValue": 0.7,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 138,
+    "dataValue": 0.8,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 139,
+    "dataValue": 1,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 140,
+    "dataValue": 1.25,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 141,
+    "dataValue": 2,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 142,
+    "dataValue": 3,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 143,
+    "dataValue": 4,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 144,
+    "dataValue": 5,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 145,
+    "dataValue": 8,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 146,
+    "dataValue": 10,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 147,
+    "dataValue": 15,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 148,
+    "dataValue": 20,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 149,
+    "dataValue": 25,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 150,
+    "dataValue": 30,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 151,
+    "dataValue": 35,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 152,
+    "dataValue": 40,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 153,
+    "dataValue": 50,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 154,
+    "dataValue": 65,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 155,
+    "dataValue": 75,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 156,
+    "dataValue": 100,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 157,
+    "dataValue": 150,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 158,
+    "dataValue": 200,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 159,
+    "dataValue": 0,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 160,
+    "dataValue": 0.03,
+    "category": "snow pellets"
+  },
+  {
+    "grayValue": 161,
+    "dataValue": 0.04,
+    "category": "snow pellets"
+  },
+  {
+    "grayValue": 162,
+    "dataValue": 0.1,
+    "category": "snow pellets"
+  },
+  {
+    "grayValue": 163,
+    "dataValue": 0.125,
+    "category": "snow pellets"
+  },
+  {
+    "grayValue": 164,
+    "dataValue": 0.2,
+    "category": "snow pellets"
+  },
+  {
+    "grayValue": 165,
+    "dataValue": 0.3,
+    "category": "snow pellets"
+  },
+  {
+    "grayValue": 166,
+    "dataValue": 0.4,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 167,
+    "dataValue": 0.5,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 168,
+    "dataValue": 0.6,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 169,
+    "dataValue": 0.7,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 170,
+    "dataValue": 0.8,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 171,
+    "dataValue": 1,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 172,
+    "dataValue": 1.25,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 173,
+    "dataValue": 2,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 174,
+    "dataValue": 3,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 175,
+    "dataValue": 4,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 176,
+    "dataValue": 5,
+    "category": "snow pellets/hail"
+  },
+  {
+    "grayValue": 177,
+    "dataValue": 8,
+    "category": "hail"
+  },
+  {
+    "grayValue": 178,
+    "dataValue": 10,
+    "category": "hail"
+  },
+  {
+    "grayValue": 179,
+    "dataValue": 15,
+    "category": "hail"
+  },
+  {
+    "grayValue": 180,
+    "dataValue": 20,
+    "category": "hail"
+  },
+  {
+    "grayValue": 181,
+    "dataValue": 25,
+    "category": "hail"
+  },
+  {
+    "grayValue": 182,
+    "dataValue": 30,
+    "category": "hail"
+  },
+  {
+    "grayValue": 183,
+    "dataValue": 35,
+    "category": "hail"
+  },
+  {
+    "grayValue": 184,
+    "dataValue": 40,
+    "category": "hail"
+  },
+  {
+    "grayValue": 185,
+    "dataValue": 50,
+    "category": "hail"
+  },
+  {
+    "grayValue": 186,
+    "dataValue": 65,
+    "category": "hail"
+  },
+  {
+    "grayValue": 187,
+    "dataValue": 75,
+    "category": "hail"
+  },
+  {
+    "grayValue": 188,
+    "dataValue": 100,
+    "category": "hail"
+  },
+  {
+    "grayValue": 189,
+    "dataValue": 150,
+    "category": "hail"
+  },
+  {
+    "grayValue": 190,
+    "dataValue": 200,
+    "category": "hail"
+  },
+  {
+    "grayValue": 191,
+    "dataValue": 0,
+    "category": "hail"
+  },
+  {
+    "grayValue": 192,
+    "dataValue": 0.03,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 193,
+    "dataValue": 0.04,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 194,
+    "dataValue": 0.1,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 195,
+    "dataValue": 0.125,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 196,
+    "dataValue": 0.2,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 197,
+    "dataValue": 0.3,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 198,
+    "dataValue": 0.4,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 199,
+    "dataValue": 0.5,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 200,
+    "dataValue": 0.6,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 201,
+    "dataValue": 0.7,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 202,
+    "dataValue": 0.8,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 203,
+    "dataValue": 1,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 204,
+    "dataValue": 1.25,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 205,
+    "dataValue": 2,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 206,
+    "dataValue": 3,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 207,
+    "dataValue": 4,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 208,
+    "dataValue": 5,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 209,
+    "dataValue": 8,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 210,
+    "dataValue": 10,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 211,
+    "dataValue": 15,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 212,
+    "dataValue": 20,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 213,
+    "dataValue": 25,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 214,
+    "dataValue": 30,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 215,
+    "dataValue": 35,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 216,
+    "dataValue": 40,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 217,
+    "dataValue": 50,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 218,
+    "dataValue": 65,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 219,
+    "dataValue": 75,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 220,
+    "dataValue": 100,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 221,
+    "dataValue": 150,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 222,
+    "dataValue": 200,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 223,
+    "dataValue": 0,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 224,
+    "dataValue": 0.03,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 225,
+    "dataValue": 0.04,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 226,
+    "dataValue": 0.1,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 227,
+    "dataValue": 0.125,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 228,
+    "dataValue": 0.2,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 229,
+    "dataValue": 0.3,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 230,
+    "dataValue": 0.4,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 231,
+    "dataValue": 0.5,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 232,
+    "dataValue": 0.6,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 233,
+    "dataValue": 0.7,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 234,
+    "dataValue": 0.8,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 235,
+    "dataValue": 1,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 236,
+    "dataValue": 1.25,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 237,
+    "dataValue": 2,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 238,
+    "dataValue": 3,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 239,
+    "dataValue": 4,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 240,
+    "dataValue": 5,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 241,
+    "dataValue": 8,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 242,
+    "dataValue": 10,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 243,
+    "dataValue": 15,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 244,
+    "dataValue": 20,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 245,
+    "dataValue": 25,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 246,
+    "dataValue": 30,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 247,
+    "dataValue": 35,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 248,
+    "dataValue": 40,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 249,
+    "dataValue": 50,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 250,
+    "dataValue": 65,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 251,
+    "dataValue": 75,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 252,
+    "dataValue": 100,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 253,
+    "dataValue": 150,
+    "category": "freezing rain"
+  },
+  {
+    "grayValue": 254,
+    "dataValue": 200,
+    "category": "freezing rain"
+  }
+]

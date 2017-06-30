@@ -7,7 +7,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 module.exports = {
   entry: {
     brush: './src/scripts/brush/index.js',
-    minimap: './src/scripts/minimap/index.js'
+    minimap: './src/scripts/minimap/index.js',
+    presets: './src/scripts/presets/index.js',
+    'tile-preview': './src/scripts/tile-preview/index.js'
   },
   output: {
     filename: '[name].js',
@@ -25,7 +27,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['env'],
+          presets: [['env', {targets: {browsers: ['last 2 versions']}}]],
           plugins: ['transform-object-rest-spread']
         }
       },
@@ -69,6 +71,16 @@ module.exports = {
       filename: 'minimap.html',
       template: 'src/templates/template.html',
       chunks: ['minimap']
+    }),
+    new HtmlPlugin({
+      filename: 'presets.html',
+      template: 'src/templates/template.html',
+      chunks: ['presets']
+    }),
+    new HtmlPlugin({
+      filename: 'tile-preview.html',
+      template: 'src/templates/template.html',
+      chunks: ['tile-preview']
     }),
     new ExtractTextPlugin({
       filename: 'styles/main.css'

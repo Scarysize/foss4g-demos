@@ -1,11 +1,11 @@
 html, body
   width: 100%
-  height: 100%
   padding: 0
   margin: 0
   display: flex
   align-items: center
   justify-content: center
+  font-family: 'Helvetica Neue', sans-serif
 
 .container
   width: 500px
@@ -15,6 +15,7 @@ html, body
   margin: 12px
 
 body.brush
+  height: 100%
   flex-direction: column
 
 .brush
@@ -37,3 +38,37 @@ body.brush
     line-height: 60px
     text-align: center
     font-size: 24px
+
+.presets
+  & .color-key
+    padding: 0
+    margin: 0
+    display: flex
+    width: 765px
+    list-style: none
+    justify-content: space-around
+    margin-top: 10px
+    align-items: center
+    font-size: 12px
+
+    & li
+      text-transform: uppercase
+      display: flex
+      align-items: center
+      margin-right: 5px
+
+      & div
+        width: 20px
+        height: 20px
+        margin-right: 5px
+        border: 1px solid black;
+
+body.tile-preview
+  height: initial
+
+.tile-preview
+  & .source
+    margin: 30px
+
+    &__tile
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
