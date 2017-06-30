@@ -1,4 +1,6 @@
 node_modules
 .tmp
 .DS_Store
+build/tile-preview.html
+build/tile-preview.js
 **/tile-preview
