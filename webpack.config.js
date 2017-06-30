@@ -6,6 +6,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: {
+    'animated-lut': './src/scripts/animated-lut/index.js',
     brush: './src/scripts/brush/index.js',
     minimap: './src/scripts/minimap/index.js',
     presets: './src/scripts/presets/index.js',
@@ -76,6 +77,11 @@ module.exports = {
       filename: 'presets.html',
       template: 'src/templates/template.html',
       chunks: ['presets']
+    }),
+    new HtmlPlugin({
+      filename: 'animated-lut.html',
+      template: 'src/templates/template.html',
+      chunks: ['animated-lut']
     }),
     new HtmlPlugin({
       filename: 'tile-preview.html',
