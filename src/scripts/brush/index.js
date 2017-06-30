@@ -48,7 +48,7 @@ createMap(map => {
       )
     }
   });
-  const tempDisplay = new TempDisplay();
+  // const tempDisplay = new TempDisplay();
 
   colorSelector(
     (min, max) => {
@@ -59,7 +59,7 @@ createMap(map => {
 
       layer.setGradientTexture(colorTexture.create(filterMap, colorFunction));
       map.resize();
-      tempDisplay.update(valueMap[min], valueMap[max - 1]);
+      // tempDisplay.update(valueMap[min], valueMap[max - 1]);
     },
     VALUE_RANGE,
     colorFunction

@@ -37,6 +37,7 @@
     "gcloud-storage-upload": "^2.0.0",
     "html-webpack-plugin": "^2.28.0",
     "lodash.throttle": "^4.1.1",
+    "mapbox-gl": "^0.38.0",
     "postcss-loader": "^2.0.6",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",

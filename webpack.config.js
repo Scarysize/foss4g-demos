@@ -10,7 +10,9 @@ module.exports = {
     brush: './src/scripts/brush/index.js',
     minimap: './src/scripts/minimap/index.js',
     presets: './src/scripts/presets/index.js',
-    'tile-preview': './src/scripts/tile-preview/index.js'
+    'tile-preview': './src/scripts/tile-preview/index.js',
+    windspeed: './src/scripts/windspeed/index.js',
+    winddirection: './src/scripts/winddirection/index.js'
   },
   output: {
     filename: '[name].js',
@@ -87,6 +89,16 @@ module.exports = {
       filename: 'tile-preview.html',
       template: 'src/templates/template.html',
       chunks: ['tile-preview']
+    }),
+    new HtmlPlugin({
+      filename: 'winddirection.html',
+      template: 'src/templates/template.html',
+      chunks: ['winddirection']
+    }),
+    new HtmlPlugin({
+      filename: 'windspeed.html',
+      template: 'src/templates/template.html',
+      chunks: ['windspeed']
     }),
     new ExtractTextPlugin({
       filename: 'styles/main.css'

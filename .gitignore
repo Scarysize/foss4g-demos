@@ -4,3 +4,4 @@ node_modules
 build/tile-preview.html
 build/tile-preview.js
 **/tile-preview
+tools/output/**
