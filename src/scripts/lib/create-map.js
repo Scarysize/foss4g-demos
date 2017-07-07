@@ -1,4 +1,4 @@
-export default function(onLoad, mapboxgl = window.mapboxgl) {
+export default function(onLoad, mapboxgl = window.mapboxgl, options) {
   const container = document.createElement('div');
   container.classList.add('map', 'container');
 
@@ -11,8 +11,8 @@ export default function(onLoad, mapboxgl = window.mapboxgl) {
     container,
     center: [0, 0],
     zoom: 1,
-    style: 'mapbox://styles/scarysize/cj318x12u00002qnqcawqy98r'
-    // renderWorldCopies: false
+    style: 'mapbox://styles/scarysize/cj318x12u00002qnqcawqy98r',
+    ...options
   });
 
   map.on('load', () => onLoad(map));

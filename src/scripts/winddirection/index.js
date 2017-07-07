@@ -1,9 +1,9 @@
-import mapboxgl from 'mapbox-gl';
 import createMap from '../lib/create-map';
 import GridDataLoader from '../lib/grid/GridDataLoader.js';
 import throttle from 'lodash.throttle';
+import style from './basemap-light.json';
 
-createMap(init, mapboxgl);
+createMap(init, undefined, {style});
 
 /*
 TODO:
@@ -22,26 +22,54 @@ function convertBounds(mapboxBounds) {
   };
 }
 
+function mapValue(value) {
+  return value / 256 * 128 - 64;
+}
+
+function getIcon(u, v, feature) {
+  const speed = Math.sqrt(Math.pow(u, 2) + Math.pow(v, 2));
+  let iconImage = 'wind-arrow-calm-00';
+  if (speed >= 2.5) {
+    let arrowNumber = `${Math.round(speed / 5.0)}`;
+    if (arrowNumber.length < 2) {
+      arrowNumber = `0${arrowNumber}`;
+    }
+    if (feature.geometry.coordinates[1] > 0) {
+      iconImage = `wind-arrow-nh-${arrowNumber}`;
+    } else {
+      iconImage = `wind-arrow-sh-${arrowNumber}`;
+    }
+  }
+
+  return iconImage;
+}
+
+function getBearing(u, v) {
+  let angle = Math.atan2(u, v);
+  if (angle < 0) {
+    angle += 2 * Math.PI;
+  }
+  return angle * 180 / Math.PI;
+}
+
 const bbox = {
   southwest: {
-    latitude: 32.959999084472656,
-    longitude: -14.000000953674316
+    latitude: -90,
+    longitude: -180
   },
   northeast: {
-    latitude: 68,
-    longitude: 37.000003814697266
+    latitude: 90,
+    longitude: 180
   }
 };
 
 const images = [
   {
-    url:
-      'https://storage.googleapis.com/storage.ubidev.net/meteogroup/dWU5OHd6Zmg4NzI5cmZjMDh6/symbols/U-region.png',
+    url: 'static/u-component.png',
     weatherParameter: 'u'
   },
   {
-    url:
-      'https://storage.googleapis.com/storage.ubidev.net/meteogroup/dWU5OHd6Zmg4NzI5cmZjMDh6/symbols/V-region.png',
+    url: 'static/v-component.png',
     weatherParameter: 'v'
   }
 ];
@@ -57,16 +85,25 @@ function init(map) {
     }
   });
   map.addLayer({
-    type: 'symbol',
+    type: 'sdficon',
     source: 'circle-source',
     id: 'circle-layer',
     layout: {
-      'icon-image': 'rocket-15',
-      'icon-rotate': {
-        type: 'identity',
-        property: 'angle'
+      'sdficon-image': '{image}',
+      'sdficon-rotate': {
+        property: 'angle',
+        type: 'identity'
       },
-      'icon-allow-overlap': true
+      'sdficon-scale': {
+        property: 'scale',
+        type: 'identity'
+      }
+    },
+    paint: {
+      'sdficon-color': {
+        property: 'color',
+        type: 'identity'
+      }
     }
   });
 
@@ -74,23 +111,23 @@ function init(map) {
     const options = {
       bbox,
       bounds: convertBounds(map.getBounds()),
-      samplingFactor: 3,
+      samplingFactor: 6,
       zoom: Math.floor(map.getZoom())
     };
+
     loader.queryData(images, options).then(geojson => {
       for (let i = 0; i < geojson.features.length; i++) {
         const feature = geojson.features[i];
-        const {u, v} = feature.properties.weatherParameters;
-        const length = Math.floor(Math.sqrt(Math.pow(u, 2) + Math.pow(v, 2)));
+        let {u, v} = feature.properties.weatherParameters;
+        u = mapValue(u);
+        v = mapValue(v);
 
-        let angle = Math.atan2(0, 1) - Math.atan2(v / length, u / length);
-        if (angle < 0) {
-          angle += 2 * Math.PI;
-        }
+        const speed = Math.sqrt(Math.pow(u, 2) + Math.pow(v, 2));
 
-        feature.properties.color = `hsla(${360 -
-          length / 222 * 360}, 100%, 50%, 1)`;
-        feature.properties.angle = Math.floor(angle * 180 / Math.PI);
+        feature.properties.angle = getBearing(u, v);
+        feature.properties.image = getIcon(u, v, feature);
+        feature.properties.color = `hsla(${speed / 30 * 360}, 100%, 50%, 1)`;
+        feature.properties.scale = Math.max(0.5, speed / 20);
       }
 
       map.getSource('circle-source').setData(geojson);
