@@ -9,7 +9,6 @@ module.exports = {
     'animated-lut': './src/scripts/animated-lut/index.js',
     brush: './src/scripts/brush/index.js',
     minimap: './src/scripts/minimap/index.js',
-    windspeed: './src/scripts/windspeed/index.js',
     winddirection: './src/scripts/winddirection/index.js'
   },
   output: {
@@ -83,11 +82,6 @@ module.exports = {
       filename: 'winddirection.html',
       template: 'src/templates/template.html',
       chunks: ['winddirection']
-    }),
-    new HtmlPlugin({
-      filename: 'windspeed.html',
-      template: 'src/templates/template.html',
-      chunks: ['windspeed']
     }),
     new ExtractTextPlugin({
       filename: 'styles/main.css'

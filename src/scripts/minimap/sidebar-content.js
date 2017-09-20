@@ -1,5 +1,5 @@
 const content = `
-<h1>Grid Data</h1>
+<h1>Grid Data Pt. 1</h1>
 <p>
   This example demonstrates how point features aligned on a uniform grid can be
   efficiently transmitted using a PNG image. Each time the map is moved, the
@@ -11,6 +11,10 @@ const content = `
 <p>
   The red box represents the current viewport of the map in regards to the
   image. It kind of works like a minimap in a video game.
+</p>
+<hr />
+<p>
+  Check out <a href="winddirection.html">Part 2</a> to see a actual use case.
 </p>
 `;
 

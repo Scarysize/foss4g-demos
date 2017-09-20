@@ -1,16 +1,20 @@
+import '../../styles/index.styl';
+
 import createMap from '../lib/create-map';
 import GridDataLoader from '../lib/grid/GridDataLoader.js';
 import throttle from 'lodash.throttle';
 import style from './basemap-light.json';
+import sidebar from '../lib/sidebar';
 
-createMap(init, undefined, {style});
+import content from './sidebar-content';
 
-/*
-TODO:
-  - add json style with custom sprite sheet
-  - add custom sprite sheet (json & png, default & @2x)
-  - get color-mapping from SBT example
-*/
+sidebar(content);
+
+createMap(init, window.mapboxgl, {
+  style,
+  center: [3.5708681554528994, 54.86588820438166],
+  zoom: 5
+});
 
 function convertBounds(mapboxBounds) {
   const sw = mapboxBounds.getSouthWest();
@@ -77,7 +81,7 @@ const images = [
 function init(map) {
   const loader = new GridDataLoader();
 
-  map.addSource('circle-source', {
+  map.addSource('source', {
     type: 'geojson',
     data: {
       type: 'FeatureCollection',
@@ -85,22 +89,19 @@ function init(map) {
     }
   });
   map.addLayer({
-    type: 'sdficon',
-    source: 'circle-source',
-    id: 'circle-layer',
+    type: 'symbol',
+    source: 'source',
+    id: 'arrow-layer',
     layout: {
-      'sdficon-image': '{image}',
-      'sdficon-rotate': {
+      'icon-image': '{image}',
+      'icon-rotate': {
         property: 'angle',
         type: 'identity'
       },
-      'sdficon-scale': {
-        property: 'scale',
-        type: 'identity'
-      }
+      'icon-size': 0.8
     },
     paint: {
-      'sdficon-color': {
+      'icon-color': {
         property: 'color',
         type: 'identity'
       }
@@ -127,12 +128,13 @@ function init(map) {
         feature.properties.angle = getBearing(u, v);
         feature.properties.image = getIcon(u, v, feature);
         feature.properties.color = `hsla(${speed / 30 * 360}, 100%, 50%, 1)`;
-        feature.properties.scale = Math.max(0.5, speed / 20);
       }
 
-      map.getSource('circle-source').setData(geojson);
+      map.getSource('source').setData(geojson);
     });
   }, 100);
 
   map.on('move', query);
+
+  query();
 }
