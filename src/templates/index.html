@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>foss4g-demos</title>
+  <title>Fun with mapbox-gl by @Scarysize</title>
   <meta charset="UTF-8" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,26 +11,78 @@
 
   <link href="styles/main.css" rel="stylesheet" />
 
+  <style>
+    body {
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3em;
+      line-height: 41px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+      width: 90%;
+      height: 280px;
+      margin-bottom: 20px;
+    }
+
+    .grid:nth-child(2n+1) {
+      grid-column: 2;
+    }
+
+    .grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      text-decoration: none;
+      color: #000;
+      font-family: Bitter, sans-serif;
+      transition: transform 200ms ease
+    }
+
+    .grid a:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    @media (min-width:1025px) {
+      h1 {
+        font-size: 6em;
+        line-height: 82px;
+        width: 500px;
+      }
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 500px;
+        height: 280px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
-  <ul>
-    <li>
-      <a href="brush.html">Brush</a>
-    </li>
-    <li>
-      <a href="minimap.html">Minimap</a>
-    </li>
-    <li>
-      <a href="animated-lut.html">Animated Look-Up Table</a>
-    </li>
-    <li>
-      <a href="windspeed.html">Wind speed</a>
-    </li>
-    <li>
-      <a href="winddirection.html">Wind direction</a>
-    </li>
-  </ul>
+  <h1>Fun<br/>with<br/>mapbox-gl</h1>
+  <div class="grid">
+    <a href="brush.html">Filtering Raster Data</a>
+    <a href="animated-lut.html">Animating Tiles</a>
+    <a href="minimap.html">Grid Data Pt. 1</a>
+    <a href="winddirection.html">Grid Data Pt. 2</a>
+  </div>
+  <footer>
+    Demos of my FOSS4G Europe
+    <a href="https://www.slideshare.net/FranzNeubert/make-it-rain-with-mapbox-gl-franz-neubert?trk=v-feed">talk</a>
+    <br/>
+    <a href="https://twitter.com/Scarysize">@Scarysize</a></footer>
 </body>
 
 </html>

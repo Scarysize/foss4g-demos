@@ -66,22 +66,26 @@ module.exports = {
     new HtmlPlugin({
       filename: 'brush.html',
       template: 'src/templates/template.html',
-      chunks: ['brush']
+      chunks: ['brush'],
+      title: 'Fun with mapbox-gl - Filtering Raster Data'
     }),
     new HtmlPlugin({
       filename: 'minimap.html',
       template: 'src/templates/template.html',
-      chunks: ['minimap']
+      chunks: ['minimap'],
+      title: 'Fun with mapbox-gl - Grid Data Pt. 1'
     }),
     new HtmlPlugin({
       filename: 'animated-lut.html',
       template: 'src/templates/template.html',
-      chunks: ['animated-lut']
+      chunks: ['animated-lut'],
+      title: 'Fun with mapbox-gl - Animating Tiles'
     }),
     new HtmlPlugin({
       filename: 'winddirection.html',
       template: 'src/templates/template.html',
-      chunks: ['winddirection']
+      chunks: ['winddirection'],
+      title: 'Fun with mapbox-gl - Grid Data Pt. 2'
     }),
     new ExtractTextPlugin({
       filename: 'styles/main.css'
