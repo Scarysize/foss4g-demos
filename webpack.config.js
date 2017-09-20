@@ -9,7 +9,6 @@ module.exports = {
     'animated-lut': './src/scripts/animated-lut/index.js',
     brush: './src/scripts/brush/index.js',
     minimap: './src/scripts/minimap/index.js',
-    presets: './src/scripts/presets/index.js',
     windspeed: './src/scripts/windspeed/index.js',
     winddirection: './src/scripts/winddirection/index.js'
   },
@@ -74,11 +73,6 @@ module.exports = {
       filename: 'minimap.html',
       template: 'src/templates/template.html',
       chunks: ['minimap']
-    }),
-    new HtmlPlugin({
-      filename: 'presets.html',
-      template: 'src/templates/template.html',
-      chunks: ['presets']
     }),
     new HtmlPlugin({
       filename: 'animated-lut.html',

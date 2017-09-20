@@ -13,7 +13,7 @@ container.innerHTML = `
     Use the brush input at the bottom to filter the raster data rendered on
     the map.
   </p>
-  <h2>How it works:</h2>
+  <hr />
   <p>
     The raster layer uses a look-up texture to colorise the originally grey
     "data" tiles. So basically the texture encodes a color value for each
