@@ -2,10 +2,14 @@ import '../../styles/index.styl';
 
 import createMap from '../lib/create-map';
 import colorSelector from './color-selector';
-import * as colorTexture from './color-texture';
-import './sidebar';
+import * as colorTexture from '../lib/color-texture';
+import sidebar from '../lib/sidebar';
 
 import valueMap from './value-map.json';
+import content from './sidebar-content';
+
+document.body.classList.add('brush-demo');
+sidebar(content);
 
 const VALUE_RANGE = [0, 100];
 const TILE_URL =

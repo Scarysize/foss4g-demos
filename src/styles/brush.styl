@@ -33,7 +33,7 @@
   position: fixed
   z-index: 4
   left: 50%
-  bottom: 10%
+  bottom: 10px
   width: 50px
   height: 50px
   background-color: white
@@ -44,6 +44,7 @@
   display: flex
   align-items: center
   justify-content: center
+  transition: background-color 200ms ease, color 200ms ease
 
   &--toggled
     background-color: #000
@@ -67,9 +68,16 @@
     stroke-width: 5px
     stroke: #000
 
-.mapboxgl-ctrl-bottom-left,
-.mapboxgl-ctrl-bottom-right
-  bottom: 10%
+body.brush-demo
+  .toggle-button
+    bottom: 10%
+
+    &--toggled
+      bottom: 10px
+
+  .mapboxgl-ctrl-bottom-left,
+  .mapboxgl-ctrl-bottom-right
+    bottom: 10%
 
 @media (min-width:1025px)
   .sidebar
@@ -84,6 +92,8 @@
   .brush
     height: 100px
 
-  .mapboxgl-ctrl-bottom-left,
-  .mapboxgl-ctrl-bottom-right
-    bottom: 100px
+  body.brush-demo
+    .mapboxgl-ctrl-bottom-left,
+    .mapboxgl-ctrl-bottom-right
+      bottom: 100px
+
