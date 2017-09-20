@@ -1,7 +1,21 @@
-import createMap from '../lib/create-map';
-import Minimap from './minimap';
-import GridDataLoader from '../lib/grid/GridDataLoader.js';
+import '../../styles/index.styl';
+
 import throttle from 'lodash.throttle';
+
+import createMap from '../lib/create-map';
+import GridDataLoader from '../lib/grid/GridDataLoader.js';
+import Minimap from './minimap';
+import sidebar from '../lib/sidebar';
+
+import content from './sidebar-content';
+
+sidebar(content);
+
+const bbox = {
+  northeast: {latitude: 52.05249047600099, longitude: 86.8359375},
+  southwest: {latitude: -52.908902047770255, longitude: -39.0234375}
+};
+const url = 'static/heart.png';
 
 createMap(init);
 
@@ -15,13 +29,8 @@ function convertBounds(mapboxBounds) {
   };
 }
 
-const bbox = {
-  northeast: {latitude: 52.05249047600099, longitude: 86.8359375},
-  southwest: {latitude: -52.908902047770255, longitude: -39.0234375}
-};
-const url = 'static/foo.png';
-
 function init(map) {
+  // eslint-disable-next-line
   const minimap = new Minimap(map, url, bbox);
   const loader = new GridDataLoader();
 
@@ -48,7 +57,7 @@ function init(map) {
     const options = {
       bbox,
       bounds: convertBounds(map.getBounds()),
-      samplingFactor: 12,
+      samplingFactor: 8,
       zoom: Math.floor(map.getZoom())
     };
 
@@ -71,4 +80,5 @@ function init(map) {
   }, 100);
 
   map.on('move', query);
+  query();
 }

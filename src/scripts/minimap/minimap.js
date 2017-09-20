@@ -1,7 +1,9 @@
+const useFixedSize = window.innerHeight >= 1000;
+
 const MAX_LNG = 360;
 const MAX_LAT = 180;
-const MAX_X = 500;
-const MAX_Y = 500;
+const MAX_X = useFixedSize ? 500 : window.innerWidth;
+const MAX_Y = useFixedSize ? 500 : Math.floor(window.innerHeight / 2);
 
 function toRatio(lngLat) {
   const xRatio = (lngLat.lng + 180) / MAX_LNG;
@@ -38,7 +40,7 @@ export default class Minimap {
     this.canvas.width = MAX_X;
     this.canvas.height = MAX_Y;
 
-    this.container.classList.add('container');
+    this.container.classList.add('minimap');
     this.container.appendChild(this.canvas);
     document.body.appendChild(this.container);
   }
