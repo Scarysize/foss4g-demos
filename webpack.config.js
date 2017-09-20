@@ -10,7 +10,6 @@ module.exports = {
     brush: './src/scripts/brush/index.js',
     minimap: './src/scripts/minimap/index.js',
     presets: './src/scripts/presets/index.js',
-    'tile-preview': './src/scripts/tile-preview/index.js',
     windspeed: './src/scripts/windspeed/index.js',
     winddirection: './src/scripts/winddirection/index.js'
   },
@@ -20,7 +19,8 @@ module.exports = {
   },
   devServer: {
     contentBase: './build',
-    port: 8000
+    port: 8000,
+    disableHostCheck: true
   },
   devtool: isProduction ? false : 'source-map',
   module: {
@@ -84,11 +84,6 @@ module.exports = {
       filename: 'animated-lut.html',
       template: 'src/templates/template.html',
       chunks: ['animated-lut']
-    }),
-    new HtmlPlugin({
-      filename: 'tile-preview.html',
-      template: 'src/templates/template.html',
-      chunks: ['tile-preview']
     }),
     new HtmlPlugin({
       filename: 'winddirection.html',

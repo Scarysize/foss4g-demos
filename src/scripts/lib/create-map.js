@@ -11,7 +11,7 @@ export default function(onLoad, mapboxgl = window.mapboxgl, options) {
     container,
     center: [0, 0],
     zoom: 1,
-    style: 'mapbox://styles/scarysize/cj318x12u00002qnqcawqy98r',
+    style: 'mapbox://styles/mapbox/dark-v9',
     ...options
   });
 
