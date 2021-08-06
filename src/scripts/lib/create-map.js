@@ -5,7 +5,7 @@ export default function(onLoad, mapboxgl = window.mapboxgl, options) {
   document.body.appendChild(container);
 
   mapboxgl.accessToken =
-    'pk.eyJ1Ijoic2NhcnlzaXplIiwiYSI6ImNpcjR2ZWs4ODAwNDZoc25xMmRzM2JlcnQifQ.XmRVjMqDm9jUWw3eMYrrUw';
+    'pk.eyJ1Ijoic2NhcnlzaXplIiwiYSI6ImNrczA0cjhkNjA2bmQyd3BlYWl3djNzamQifQ.bRMUl7cIVMfad2UNjGIKoQ';
 
   const map = new mapboxgl.Map({
     container,
