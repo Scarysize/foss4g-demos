@@ -46,7 +46,7 @@
 		"webpack-dev-server": "^2.5.0"
 	},
 	"dependencies": {
-		"d3": "^4.9.1",
+		"d3": "^7.6.1",
 		"lodash.range": "^3.2.0"
 	}
 }
